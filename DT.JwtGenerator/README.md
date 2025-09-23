@@ -1,0 +1,75 @@
+﻿# DigitTwin.JwtGenerator
+
+## Описание
+Fluent JWT Builder для .NET с поддержкой DDD и DI.
+
+```bash
+dotnet add package DigitTwin.JwtGenerator
+```
+
+### Настройка
+Добавить в `appsettings.json`
+
+```json
+{
+  "Jwt": {
+    "SecretKey": "your_32_chars_min_secret_key_here_!",
+    "Issuer": "https://yourapi.com",
+    "Audience": "https://yourclient.com",
+    "AccessTokenLifetime": "00:15:00",
+    "RefreshTokenLifetime": "7.00:00:00"
+  }
+}
+```
+
+Зарегистрируйте в `Program.cs`
+
+```csharp
+using DigitTwin.JwtGenerator;
+
+builder.Services.AddJwtServices(builder.Configuration);
+```
+
+### Использование
+Генерация токена
+
+```csharp
+var token = _jwtTokenBuilder
+    .AddClaim("sub", "123")
+    .AddClaim("email", "user@example.com")
+    .WithExpiration(TimeSpan.FromHours(1))
+    .Build();
+```
+
+Вадидация токена
+
+```cshsrp
+if (_jwtTokenValidator.TryValidateToken(jwt, out var principal))
+{
+    var userId = principal.GetUserId();
+    var email = principal.GetEmail();
+}
+```
+
+Refresh-токены
+```csharp
+var refreshToken = await _refreshTokenService.GenerateRefreshTokenAsync("123");
+var isValid = await _refreshTokenService.ValidateRefreshTokenAsync(refreshToken);
+await _refreshTokenService.RevokeRefreshTokenAsync(refreshToken);
+```
+
+### Дополнительно
+Реализуйте `IRefreshTokenStore` в инфраструктуре:
+
+```csharp
+public class EfCoreRefreshTokenStore : IRefreshTokenStore
+{
+    // Реализуйте методы: GetByTokenAsync, AddAsync, RevokeAsync, RemoveExpiredAsync
+}
+```
+
+И зарегистрируйте:
+
+```csharp
+builder.Services.AddScoped<IRefreshTokenStore, EfCoreRefreshTokenStore>();
+```
