@@ -1,3 +1,10 @@
 <Solution>
+  <Folder Name="/.github/" />
+  <Folder Name="/.github/workflows/">
+    <File Path=".github/workflows/publish.yml" />
+  </Folder>
+  <Folder Name="/Элементы решения/">
+    <File Path="REDAME.md" />
+  </Folder>
   <Project Path="DT.JwtGenerator/DT.JwtGenerator.csproj" />
 </Solution>
