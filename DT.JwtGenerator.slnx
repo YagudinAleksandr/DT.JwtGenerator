@@ -4,7 +4,7 @@
     <File Path=".github/workflows/publish.yml" />
   </Folder>
   <Folder Name="/Элементы решения/">
-    <File Path="READAME.md" />
+    <File Path="README.md" />
   </Folder>
   <Project Path="DT.JwtGenerator/DT.JwtGenerator.csproj" />
 </Solution>
