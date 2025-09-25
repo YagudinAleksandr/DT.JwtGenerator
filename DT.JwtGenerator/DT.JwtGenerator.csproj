@@ -7,7 +7,7 @@
 		<!-- Генерация XML-документации -->
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<NoWarn>$(NoWarn);1591</NoWarn>
-		<Version>1.0.5</Version>
+		<Version>1.0.6</Version>
 		<Authors>Aleksandr Yagudin</Authors>
 		<Description>Easy JWT Generator</Description>
 
@@ -15,7 +15,7 @@
 		<RepositoryUrl>https://github.com/YagudinAleksandr/DT.JwtGenerator</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>gwt;generator;</PackageTags>
-		<PackageReleaseNotes>Initial release.</PackageReleaseNotes>
+		<PackageReleaseNotes>Change icon.</PackageReleaseNotes>
 		<Copyright>Copyright 2025 Aleksandr Yagudin</Copyright>
 		<NeutralLanguage>ru</NeutralLanguage>
 		
