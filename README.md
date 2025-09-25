@@ -1,7 +1,7 @@
 ﻿# DigitTwin.JwtGenerator
 
-[![NuGet Version](https://img.shields.io/nuget/v/DT.JwtGenerator.svg?logo=nuget)](https://www.nuget.org/packages/YourProject.Jwt)
-[![NuGet Downloads](https://img.shields.io/nuget/dt/DT.JwtGenerator.svg)](https://www.nuget.org/packages/YourProject.Jwt)
+[![NuGet Version](https://img.shields.io/nuget/v/DT.JwtGenerator.svg?logo=nuget)](https://www.nuget.org/packages/DT.JwtGenerator)
+[![NuGet Downloads](https://img.shields.io/nuget/dt/DT.JwtGenerator.svg)](https://www.nuget.org/packages/DT.JwtGenerator)
 [![.NET](https://img.shields.io/badge/.NET-9%2B%20%7C%207%20%7C%208-blue?logo=.net)](https://dotnet.microsoft.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
