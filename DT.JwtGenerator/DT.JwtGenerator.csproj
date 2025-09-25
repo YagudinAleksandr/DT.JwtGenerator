@@ -14,8 +14,6 @@
 		<PackageProjectUrl>https://github.com/YagudinAleksandr/DT.JwtGenerator</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/YagudinAleksandr/DT.JwtGenerator</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
-		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<!-- или используйте <PackageLicenseFile>LICENSE</PackageLicenseFile> -->
 		<PackageTags>gwt;generator;</PackageTags>
 		<PackageReleaseNotes>Initial release.</PackageReleaseNotes>
 		<Copyright>Copyright 2025 Aleksandr Yagudin</Copyright>
