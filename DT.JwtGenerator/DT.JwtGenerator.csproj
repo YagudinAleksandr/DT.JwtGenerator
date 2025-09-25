@@ -7,8 +7,22 @@
 		<!-- Генерация XML-документации -->
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<NoWarn>$(NoWarn);1591</NoWarn>
-		<Version>1.0.1</Version>
+		<Version>1.0.2</Version>
+		<Authors>Aleksandr Yagudin</Authors>
+		<Description>Easy JWT Generator</Description>
+
+		<PackageProjectUrl>https://github.com/YagudinAleksandr/DT.JwtGenerator</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/YagudinAleksandr/DT.JwtGenerator</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<!-- или используйте <PackageLicenseFile>LICENSE</PackageLicenseFile> -->
+		<PackageTags>gwt;generator;</PackageTags>
+		<PackageReleaseNotes>Initial release.</PackageReleaseNotes>
+		<Copyright>Copyright 2025 Aleksandr Yagudin</Copyright>
+		<NeutralLanguage>ru</NeutralLanguage>
+		
 		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageIcon>DigitTwin.png</PackageIcon>
 	</PropertyGroup>
 
 
@@ -19,6 +33,7 @@
 		<PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.14.0" />
 		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.14.0" />
 		<None Include="README.md" Pack="true" PackagePath="\"/>
+		<None Include="DigitTwin.png" Pack="true" PackagePath="\" />
 	</ItemGroup>
 
 </Project>
